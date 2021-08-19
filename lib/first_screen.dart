@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -67,8 +68,14 @@ class _FirstScreenState extends State<FirstScreen> {
                   ],
                 ),
                 SizedBox(height: 32),
-                Text('https://hng.tech/',
-                    style: TextStyle(color: Colors.blue, fontSize: 18)),
+                CupertinoButton(
+                  padding: EdgeInsets.zero,
+                  onPressed: () {
+                    launch('https://hng.tech/');
+                  },
+                  child: Text('https://hng.tech/',
+                      style: TextStyle(color: Colors.blue, fontSize: 18)),
+                ),
                 SizedBox(height: 32),
                 Text(
                   'Enter a Text',
