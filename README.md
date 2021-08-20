@@ -4,4 +4,7 @@
 
 ![Alt Text](gif.gif)
 
+### [this is the link to my compulsory task](https://github.com/farmery/hng_stage_project/blob/main/CompulsoryTask.js)
+
+
 
